@@ -1,0 +1,39 @@
+<div *ngIf="dish" class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <img style="height: 450px;" class="card-img-top" src="{{dish.image}}" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">{{dish.name}}</h4>
+          <p class="card-text">{{dish.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container">
+        <div class="row">
+          <div style="font-size: 1.2em;" class="col-md-9" id="comments">
+            <h3 class="mb-2">Comments</h3>
+            <!-- comment -->
+            <div *ngFor="let comment of dish.comments" class="comment mb-2 row">
+              <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                <a href="">
+                  <i style="color: grey;" class="fa fa-user"></i>
+                </a>
+              </div>
+              <div class="comment-content col-md-11 col-sm-10">
+                <h6 class="small comment-meta"><a href="#">{{comment.author}}</a> {{comment.date | date}}</h6>
+                <div class="comment-body">
+                  <p>
+                    {{comment.comment}}
+                  </p>
+                </div>
+              </div>
+              <!-- /reply is indented -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

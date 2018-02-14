@@ -1,0 +1,8 @@
+.dishImage{
+  width: 100%;
+  height: 375px;
+}
+
+.dishImageSelected{
+  border: 1px solid gold;
+}
