@@ -64,3 +64,16 @@ Day 4
 
 Day 5
 1. Assignment 1 Solution and discussion
+
+Day 6
+1. Understanding directives and their importance in angular
+2. Understanding the three types of directives supported by angular
+3. Understanding Pipes in Angular
+4. Understanding data binding and how Angular enables the flow of information between the component and its template
+5. Understanding the four kinds of data binding: interpolation, property attribute and event binding and the use of two-way data binding
+6. Understanding comminication and ways to do communication between components
+7. Understanding basics of Design Patterns
+8. Understanding MVC and MVVM design patterns
+9. Understanding angular services and their importance
+10. Understanding Dependency Injection
+11. Exercise: Angular services and Dependency injection
