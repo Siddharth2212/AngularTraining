@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div *ngFor="let dish of dishes" class="col-md-6" (click) = "onSelect(dish)">
+    <div *ngFor="let dish of dishes" class="col-md-6" [routerLink]="['/dishdetail', dish.id]">
 
       <img src="{{dish.image}}" alt="test" [ngClass]="{'dishImageSelected': (selectedDish==dish)}" class="img-responsive dishImage">
 
@@ -12,4 +12,4 @@
   </div>
 </div>
 <hr>
-<app-dishdetail [dish]="selectedDish"></app-dishdetail>
+<!--<app-dishdetail [dish]="selectedDish"></app-dishdetail>-->

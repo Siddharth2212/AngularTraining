@@ -77,3 +77,17 @@ Day 6
 9. Understanding angular services and their importance
 10. Understanding Dependency Injection
 11. Exercise: Angular services and Dependency injection
+
+Day 7
+1. Revision of Services and Dependency Injection
+2. Revision of Components, Data binding, Directives
+3. Doubt Clearing session
+4. Introduction to Angular Routing
+
+Day 8
+1. Routing basics
+2. Router configuration
+3. RouterLink
+4. routerOutlet
+5. routerLinkActive
+6. Making our custom module for routing and importing it in AppModule
