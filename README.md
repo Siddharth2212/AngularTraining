@@ -91,3 +91,8 @@ Day 8
 4. routerOutlet
 5. routerLinkActive
 6. Making our custom module for routing and importing it in AppModule
+7. Assignment 2: Problem statement
+
+Day 9
+1. Assignment 9 Disucssion and Solution
+2. Exercise: Services and routing
