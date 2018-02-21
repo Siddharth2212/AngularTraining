@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  user = {remember: false};
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(form){
+    console.log(form);
+    //form.reset();
   }
 
 }
