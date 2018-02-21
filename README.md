@@ -96,3 +96,12 @@ Day 8
 Day 9
 1. Assignment 9 Disucssion and Solution
 2. Exercise: Services and routing
+
+Day 10
+1. Basics of Angular forms
+2. Types of Angular forms: Template driven and Reactive forms
+3. Basics of template driven forms
+4. Exercise: Create our own template driven form (login form)
+5. Exercise: Applying Angular validation and two way data binding to our template driven form
+6. Exercise: Understanding template variables and how they can be used to access form control objects and form object anywhere inside the template
+7. Exercise: Understanding how angular form directives can be used along with bootstrap form support elements to validate forms
