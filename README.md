@@ -112,3 +112,4 @@ Day 11
 3. Exercise: Create a feedback form using Angular reactive form approach 
 4. Creating FormGroup, FormControls using FormBuider
 5. Understanding novalidate and using Validators given by Angular
+6. Understanding Form Object created in Reactive approach and adding UI to show error alerts using it
