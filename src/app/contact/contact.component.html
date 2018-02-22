@@ -38,4 +38,116 @@
       </div>
     </div>
   </div>
+
+
+</div>
+<div class="container">
+  <p>{{ feedbackForm.value | json }} {{ feedbackForm.status | json }}</p>
+  <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Send us your Feedback</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div [ngClass]="{'has-danger': feedbackForm.get('firstname').hasError('required') && feedbackForm.get('firstname').touched}" class="form-group" >
+          <label class="sr-only" for="firstname">First Name</label>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+            <input type="text" formControlName="firstname" class="form-control" id="firstname"
+                   placeholder="First Name" required>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="sr-only" for="lastname">Last Name</label>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+            <input type="text" formControlName="lastname" class="form-control" id="lastname"
+                   placeholder="Last Name" required>
+          </div>
+        </div>
+      </div>
+      <!--<div *ngIf="username.invalid && !username.pristine" class="col-md-12">
+        <div class="form-control-feedback">
+                      <span class="text-danger align-middle">
+                           Please fill something
+                      </span>
+        </div>
+      </div>-->
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="sr-only" for="tel">Tel. No.</label>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-phone"></i></div>
+            <input type="tel" formControlName="telnum" class="form-control" id="tel"
+                   placeholder="Tel. Number" required>
+          </div>
+        </div>
+      </div>
+      <!--<div *ngIf="username.invalid && !username.pristine" class="col-md-12">
+        <div class="form-control-feedback">
+                      <span class="text-danger align-middle">
+                           Please fill something
+                      </span>
+        </div>
+      </div>-->
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="sr-only" for="emailid">Email</label>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-envelope"></i></div>
+            <input type="text" formControlName="email" class="form-control" id="emailid"
+                   placeholder="Email" required>
+          </div>
+        </div>
+      </div>
+      <!--<div *ngIf="username.invalid && !username.pristine" class="col-md-12">
+        <div class="form-control-feedback">
+                      <span class="text-danger align-middle">
+                           Please fill something
+                      </span>
+        </div>
+      </div>-->
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="padding-top: .35rem">
+        <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+          <label class="form-check-label">
+            <input class="form-check-input" formControlName="agree"
+                   type="checkbox" >
+            <span style="padding-bottom: .15rem">May we contact you?</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="padding-top: .35rem">
+        <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">How?</label>
+          <select formControlName="contacttype" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+            <option *ngFor="let ctype of contactType" value="{{ctype}}">{{ctype}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="padding-top: .35rem">
+        <div class="form-group">
+          <label for="exampleTextarea">Your Feedback</label>
+          <textarea formControlName="message" class="form-control" id="exampleTextarea" rows="12"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 1rem">
+      <div class="col-md-12">
+        <button [disabled]="feedbackForm.invalid" type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i> Send</button>
+      </div>
+    </div>
+  </form>
 </div>

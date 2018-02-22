@@ -105,3 +105,10 @@ Day 10
 5. Exercise: Applying Angular validation and two way data binding to our template driven form
 6. Exercise: Understanding template variables and how they can be used to access form control objects and form object anywhere inside the template
 7. Exercise: Understanding how angular form directives can be used along with bootstrap form support elements to validate forms
+
+Day 11
+1. Revision of template driven forms
+2. What are Reacetive forms, Why Reactive forms?
+3. Exercise: Create a feedback form using Angular reactive form approach 
+4. Creating FormGroup, FormControls using FormBuider
+5. Understanding novalidate and using Validators given by Angular
