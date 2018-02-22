@@ -108,7 +108,7 @@ Day 10
 
 Day 11
 1. Revision of template driven forms
-2. What are Reacetive forms, Why Reactive forms?
+2. What are Reactive forms, Why Reactive forms?
 3. Exercise: Create a feedback form using Angular reactive form approach 
 4. Creating FormGroup, FormControls using FormBuider
 5. Understanding novalidate and using Validators given by Angular
