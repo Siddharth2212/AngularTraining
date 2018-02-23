@@ -92,12 +92,12 @@
         <div class="card" *ngFor="let leader of leaders">
           <div class="card-header" role="tab" id="dannyhead">
             <h3 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#danny" aria-expanded="true" aria-controls="collapseOne">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{leader.abbr}}" aria-expanded="true" aria-controls="collapseOne">
                 {{leader.name}} <small>{{leader.designation}}</small>                                </a>
             </h3>
           </div>
 
-          <div id="danny" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div id="{{leader.abbr}}" class="collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-block">
               <p class="hidden-xs-down">{{leader.description}}</p>
             </div>
