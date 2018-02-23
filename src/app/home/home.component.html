@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
-    <div class="col-md-6">
+    <div *ngIf="dish" class="col-md-6">
       <div class="card">
         <img style="height: 300px;" class="card-img-top" src="{{dish.image}}" alt="Card image cap">
         <div style="min-height: 200px;" class="card-block">
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div *ngIf="promotion" class="col-md-6">
       <div class="card">
         <img style="height: 300px;" class="card-img-top" src="{{promotion.image}}" alt="Card image cap">
         <div style="min-height: 200px;" class="card-block">
@@ -17,6 +17,14 @@
           <p class="card-text">{{promotion.description}}</p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <app-spinner *ngIf="!dish"></app-spinner>
+    </div>
+    <div class="col-md-6">
+      <app-spinner *ngIf="!promotion"></app-spinner>
     </div>
   </div>
 </div>
