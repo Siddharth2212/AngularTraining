@@ -94,7 +94,7 @@ Day 8
 7. Assignment 2: Problem statement
 
 Day 9
-1. Assignment 2 Disucssion and Solution
+1. Assignment 2 Discussion and Solution
 2. Exercise: Services and routing
 
 Day 10
@@ -113,3 +113,12 @@ Day 11
 4. Creating FormGroup, FormControls using FormBuider
 5. Understanding novalidate and using Validators given by Angular
 6. Understanding Form Object created in Reactive approach and adding UI to show error alerts using it
+
+Day 12
+1. Introduction to Asynchronous Computing
+2. Introduction to ways in which asynchronous computing can be done in JS
+3. Understanding Promises as a way to do asynchronous computing and its advantages of callbacks
+4. Understanding States of promises
+5. Understanding how to handle promises and changes in their states
+6. Exersise 1: Resolving promise immediately and learning how to handle promises in components
+7. Exersise 2: Simulating the delay in promise and updating template to indicate user the delay
