@@ -94,7 +94,7 @@ Day 8
 7. Assignment 2: Problem statement
 
 Day 9
-1. Assignment 9 Disucssion and Solution
+1. Assignment 2 Disucssion and Solution
 2. Exercise: Services and routing
 
 Day 10
