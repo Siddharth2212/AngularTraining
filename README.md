@@ -122,3 +122,7 @@ Day 12
 5. Understanding how to handle promises and changes in their states
 6. Exersise 1: Resolving promise immediately and learning how to handle promises in components
 7. Exersise 2: Simulating the delay in promise and updating template to indicate user the delay
+
+Day 13
+1. Revision and doubt clearing session
+2. Overview of Reactive programming
