@@ -126,3 +126,11 @@ Day 12
 Day 13
 1. Revision and doubt clearing session
 2. Overview of Reactive programming
+
+Day 14
+1. Reactive Programming Continued
+2. Introduction to observable pattern
+3. Understanding RxJS as a way to do Reactive programming in Angular
+4. Exercise: Updating services to return Observables as an intermediate step to use HTTP service in Angular
+5. Exercise: Use of Reactive programming in Reactive Forms to make dynamic messages in Components
+6. Assignment 3: Problem Statement
