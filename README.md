@@ -134,3 +134,9 @@ Day 14
 4. Exercise: Updating services to return Observables as an intermediate step to use HTTP service in Angular
 5. Exercise: Use of Reactive programming in Reactive Forms to make dynamic messages in Components
 6. Assignment 3: Problem Statement
+
+Day 15
+1. Assignment 3: Discussion & Solution
+2. Client & Server communication
+3. Essentials of Networking
+4. Understanding HTTP protocol in detail
