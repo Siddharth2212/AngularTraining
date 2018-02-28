@@ -13,10 +13,14 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {PromotionService} from './services/promotion.service';
-import {BootstrapModalModule} from 'ng2-bootstrap-modal';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import {baseURL} from './shared/baseurl';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {RestangularModule} from 'ngx-restangular';
+import {RestangularConfigFactory} from './shared/restConfig';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -30,15 +34,19 @@ import { SpinnerComponent } from './spinner/spinner.component';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    RestangularModule.forRoot(RestangularConfigFactory)
   ],
-  providers: [DishService, PromotionService],
+  providers: [
+    DishService, PromotionService, {provide: 'BaseURL', useValue: baseURL}, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

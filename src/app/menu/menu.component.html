@@ -2,7 +2,7 @@
   <div class="row">
     <div *ngFor="let dish of dishes" class="col-md-6" [routerLink]="['/dishdetail', dish.id]">
 
-      <img src="{{dish.image}}" alt="test" [ngClass]="{'dishImageSelected': (selectedDish==dish)}" class="img-responsive dishImage">
+      <img src="{{baseURL+dish.image}}" alt="test" [ngClass]="{'dishImageSelected': (selectedDish==dish)}" class="img-responsive dishImage">
 
       <div class="carousel-caption">
         <h1>{{dish.name }}</h1>
@@ -11,6 +11,10 @@
     </div>
   </div>
 </div>
-<app-spinner *ngIf="!dishes"></app-spinner>
+<app-spinner *ngIf="!dishes && !errorMsg"></app-spinner>
+<div *ngIf="errorMsg" class="container">
+  <h3>An Error Occurred</h3>
+  <p>{{errorMsg}}</p>
+</div>
 <hr>
 <!--<app-dishdetail [dish]="selectedDish"></app-dishdetail>-->
