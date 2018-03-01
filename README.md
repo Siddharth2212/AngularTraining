@@ -140,3 +140,18 @@ Day 15
 2. Client & Server communication
 3. Essentials of Networking
 4. Understanding HTTP protocol in detail
+
+Day 16
+1. Basics of REST ( Representational State Transfer)
+2. REST Concepts: Resources, Verbs, Representations
+3. Exercise: Use of HttpClient module in Angular to communicate with RESTful server to do CRUD operations
+4. Exercise: Error handling
+
+Day 17
+1. Use of Restangular module from npm library to do API requests on RESTful server
+2. Understanding advantages of Restangular
+3. Understanding Custom directives in Angular
+4. Exercise: Building our own custom directive (Highlight directive)
+5. Understanding Animations in Angular
+6. Exercise: Creating animation for animating dishdetail page to indicate change in detail on click of prev or next button
+7. Assignment 4: Problem Statement
