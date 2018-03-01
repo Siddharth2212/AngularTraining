@@ -8,11 +8,11 @@
           <p class="card-text">{{dish.description}}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">
+          <li class="list-group-item justify-content-center">
             <div class="btn-group demoPadder" role="group" aria-label="Basic example">
               <button (click)="goBack()" type="button" class="btn btn-default">Go Back</button>
-              <button [routerLink]="['/dishdetail', prev]" type="button" class="btn btn-default">Prev</button>
-              <button [routerLink]="['/dishdetail', next]" type="button" class="btn btn-default">Next</button>
+              <button [routerLink]="['/dishdetail', prev]" type="button" class="btn btn-default"><i class="fa fa-angle-double-left"></i> Prev</button>
+              <button [routerLink]="['/dishdetail', next]" type="button" class="btn btn-default">Next <i class="fa fa-angle-double-right"></i></button>
             </div>
           </li>
         </ul>
@@ -75,7 +75,7 @@
                   <div [ngClass]="{'has-danger': formErrors.author}" class="form-group" >
                     <label class="sr-only" for="author">First Name</label>
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                      <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                      <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
                       <input type="text" formControlName="author" class="form-control" id="author"
                              placeholder="Author" required>
                     </div>
@@ -90,7 +90,7 @@
                   <div [ngClass]="{'has-danger': formErrors.rating}" class="form-group">
                     <label class="sr-only" for="rating">Rating</label>
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                      <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                      <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-star"></i></div>
                       <input type="number" formControlName="rating" class="form-control" id="rating"
                              placeholder="Rating" required>
                     </div>
@@ -107,7 +107,7 @@
                   <div [ngClass]="{'has-danger': formErrors.comment}" class="form-group">
                     <label class="sr-only" for="comment">Comment</label>
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                      <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-phone"></i></div>
+                      <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-comment"></i></div>
                       <textarea formControlName="comment" class="form-control" id="comment" rows="6"
                              placeholder="Comment">
                       </textarea>
