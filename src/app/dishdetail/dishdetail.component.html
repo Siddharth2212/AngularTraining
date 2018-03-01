@@ -9,9 +9,11 @@
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <button (click)="goBack()">Go Back</button>
-            <button [routerLink]="['/dishdetail', prev]">Prev</button>
-            <button [routerLink]="['/dishdetail', next]">Next</button>
+            <div class="btn-group demoPadder" role="group" aria-label="Basic example">
+              <button (click)="goBack()" type="button" class="btn btn-default">Go Back</button>
+              <button [routerLink]="['/dishdetail', prev]" type="button" class="btn btn-default">Prev</button>
+              <button [routerLink]="['/dishdetail', next]" type="button" class="btn btn-default">Next</button>
+            </div>
           </li>
         </ul>
       </div>
