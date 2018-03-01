@@ -22,6 +22,7 @@ import {RestangularModule} from 'ngx-restangular';
 import {RestangularConfigFactory} from './shared/restConfig';
 import { HighlightDirective } from './directives/highlight.directive';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {LeaderService} from './services/leader.service';
 
 
 @NgModule({
@@ -48,7 +49,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [
-    DishService, PromotionService, {provide: 'BaseURL', useValue: baseURL}, HttpClient],
+    DishService, PromotionService, {provide: 'BaseURL', useValue: baseURL}, HttpClient, LeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
