@@ -31,15 +31,15 @@ export class PromotionService {
   }*/
 
   getPromotions(): Observable<Promotion[]> {
-    return this.restangular.all('dishes').getList();
+    return this.restangular.all('promotions').getList();
   }
 
   getPromotion(id: number): Observable<Dish> {
-    return this.restangular.one('dishes', id).get();
+    return this.restangular.one('promotions', id).get();
   }
 
   getFeaturedPromotion(): Observable<Dish> {
-    return this.restangular.all('dishes').getList({
+    return this.restangular.all('promotions').getList({
       featured: true
     }).map(dishes => dishes[0]);
 
