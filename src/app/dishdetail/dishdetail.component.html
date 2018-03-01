@@ -1,5 +1,12 @@
 <div [@visibility]="visibility" *ngIf="dish" class="container">
   <div class="row">
+    <ol class="col-12 breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/menu">Menu</a></li>
+      <li class="breadcrumb-item">{{dish.name}}</li>
+    </ol>
+  </div>
+  <div class="row">
     <div class="col-md-6">
       <div class="card">
         <img style="height: 450px;" class="card-img-top" src="{{dish.image}}" alt="Card image cap">
