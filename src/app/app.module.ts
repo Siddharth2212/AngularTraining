@@ -21,6 +21,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {RestangularModule} from 'ngx-restangular';
 import {RestangularConfigFactory} from './shared/restConfig';
 import { HighlightDirective } from './directives/highlight.directive';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RestangularModule.forRoot(RestangularConfigFactory)
+    RestangularModule.forRoot(RestangularConfigFactory),
+    BrowserAnimationsModule
   ],
   providers: [
     DishService, PromotionService, {provide: 'BaseURL', useValue: baseURL}, HttpClient],

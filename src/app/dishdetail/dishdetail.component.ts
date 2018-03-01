@@ -6,11 +6,14 @@ import {Location} from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Comment} from '../shared/comment';
+import {easeInOut} from '../animations/animations';
+
 
 @Component({
   selector: 'app-dishdetail',
   templateUrl: './dishdetail.component.html',
-  styleUrls: ['./dishdetail.component.css']
+  styleUrls: ['./dishdetail.component.css'],
+  animations: [easeInOut()]
 })
 
 export class DishdetailComponent implements OnInit {
@@ -22,6 +25,7 @@ export class DishdetailComponent implements OnInit {
   prev: number;
   next: number;
   dishcopy = null;
+  visibility = 'shown';
 
   formErrors = {
     'author': '',
@@ -66,8 +70,8 @@ export class DishdetailComponent implements OnInit {
 
     this.dishservice.getDishIds().subscribe(dishIds => this.dishIds = dishIds);
     this.route.params
-      .switchMap((params: Params) => this.dishservice.getDish(+params['id']))
-      .subscribe(dish => { this.dish = dish; this.dishcopy = dish; this.setPrevNext(dish.id); });
+      .switchMap((params: Params) => { this.visibility = 'hidden'; return this.dishservice.getDish(+params['id']); })
+      .subscribe(dish => { this.dish = dish; this.dishcopy = dish; this.setPrevNext(dish.id); this.visibility = 'shown'});
   }
 
   createForm() {

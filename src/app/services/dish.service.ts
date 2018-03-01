@@ -10,43 +10,28 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {catchError} from 'rxjs/operators';
 import {ErrorObservable} from 'rxjs/observable/ErrorObservable';
+import {Restangular} from 'ngx-restangular';
 
 @Injectable()
 export class DishService {
 
-  constructor(private http: HttpClient) {
-  }
-
-  private handleError(error: HttpErrorResponse) {
-    if (error.error instanceof ErrorEvent) {
-      // A client-side or network error occurred. Handle it accordingly.
-      console.error('An error occurred:', error.error.message);
-    } else {
-      // The backend returned an unsuccessful response code.
-      // The response body may contain clues as to what went wrong,
-      console.error(
-        `Backend returned code ${error.status}, ` +
-        `body was: ${error.error}`);
-    }
-    // return an ErrorObservable with a user-facing error message
-    return new ErrorObservable(
-      'Something bad happened; please try again later.');
+  constructor(private http: HttpClient,
+              private restangular: Restangular) {
   }
 
   getDishes(): Observable<Dish[]> {
-    return this.http.get<Dish[]>(baseURL + 'dishes')
-      .pipe(
-        catchError(this.handleError)
-      );
+    return this.restangular.all('dishes').getList();
   }
 
   getDish(id: number): Observable<Dish> {
-    return  this.http.get<Dish>(baseURL + 'dishes/' + id);
+    return this.restangular.one('dishes', id).get();
   }
 
   getFeaturedDish(): Observable<Dish> {
-    return this.http.get<Dish>(baseURL + 'dishes?featured=true')
-      .map(res => res[0]);
+    return this.restangular.all('dishes').getList({
+      featured: true
+    }).map(dishes => dishes[0]);
+
   }
 
   getDishIds(): Observable<number[]> {

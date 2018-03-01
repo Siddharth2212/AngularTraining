@@ -1,6 +1,6 @@
 <div *ngIf="dishes" class="container">
-  <div class="row">
-    <div *ngFor="let dish of dishes" class="col-md-6" [routerLink]="['/dishdetail', dish.id]">
+  <div class="row" style="margin-top: 5%;">
+    <div *ngFor="let dish of dishes" class="col-md-6" [routerLink]="['/dishdetail', dish.id]" appHighlight>
 
       <img src="{{baseURL+dish.image}}" alt="test" [ngClass]="{'dishImageSelected': (selectedDish==dish)}" class="img-responsive dishImage">
 
