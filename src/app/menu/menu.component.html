@@ -5,7 +5,7 @@
       <img src="{{baseURL+dish.image}}" alt="test" [ngClass]="{'dishImageSelected': (selectedDish==dish)}" class="img-responsive dishImage">
 
       <div class="carousel-caption">
-        <h1>{{dish.name }}</h1>
+        <h1>{{dish.name | uppercase }}</h1>
       </div>
 
     </div>
