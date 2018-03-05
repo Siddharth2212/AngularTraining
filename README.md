@@ -155,3 +155,9 @@ Day 17
 5. Understanding Animations in Angular
 6. Exercise: Creating animation for animating dishdetail page to indicate change in detail on click of prev or next button
 7. Assignment 4: Problem Statement
+
+Day 18
+1. Angular animations completed
+2. Unit testing
+3. e2e Testing
+4. Testing exercises
