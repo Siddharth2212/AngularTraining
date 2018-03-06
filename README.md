@@ -161,3 +161,8 @@ Day 18
 2. Unit testing
 3. e2e Testing
 4. Testing exercises
+
+Day 19
+1. Introduction to MongoDB
+2. MongoDB vs MySQL
+3. MongoDB queries part 1
