@@ -166,3 +166,6 @@ Day 19
 1. Introduction to MongoDB
 2. MongoDB vs MySQL
 3. MongoDB queries part 1
+
+Day 20
+1. MongoDB queries part 2
