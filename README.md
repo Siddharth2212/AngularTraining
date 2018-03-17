@@ -169,3 +169,48 @@ Day 19
 
 Day 20
 1. MongoDB queries part 2
+
+Day 21
+Intro to Node.js
+An overview of Node.js
+blocking vs. non-blocking code
+reading files, issuing requests
+
+Day 22
+Events
+Event emitters, 
+event requests, 
+event listening
+
+
+Day 23
+Streams
+Reading, writing, piping
+
+Day 24
+Modules
+Exporting, 
+npm installing, dependencies, and semantic versioning
+
+
+Day 25
+Express basics
+Routes, rendering, layouts, url building, express servers
+
+Day 26
+Socket.io
+Listening for, broadcasting, and answering questions, saving client data
+
+Day 27
+Persisting Data
+Redis, working with lists, 
+persisting, emitting, and limiting questions
+
+Day 28
+Introduction to Express JS
+Installing Express
+Buliding some first routes
+Middleware
+Understanding middleware and their use
+Using built in express.static middleware
+building a custom logger middleware
