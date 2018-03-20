@@ -214,3 +214,15 @@ Day 28
 5. Understanding middleware and their use
 6. Using built in express.static middleware
 7. building a custom logger middleware
+
+Day 29
+1. Reading from URL
+2. Massaging User's data
+3. Body Parser Middleware
+4. POST requests and DELETE requests
+5. Refractoring Routes
+
+Day 30
+1. Making Routes for our restaurant application
+2. Exercise: Setting appropriate response code, headers and bodies for routes
+3. Refractoring routes
