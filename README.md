@@ -226,3 +226,15 @@ Day 30
 1. Making Routes for our restaurant application
 2. Exercise: Setting appropriate response code, headers and bodies for routes
 3. Refractoring routes
+
+Day 31
+1. MongoDB and MongoDB driver
+2. Understand kinds of support provide by MongoDb driver
+3. Understanding Promises. Promises vs Callbacks comparision.
+4. Exercise: Understanding the problem of Callback hell through an exercise
+5. Exercise: Solving the Callback hell problem using Promises
+
+Day 32
+1. Understanding ORM or ODM
+2. Introduction to Mongoose
+3. Exercise: Using Mongoose as ORM to provide schema to our DB using promise support on Mongoose through Bluebird
