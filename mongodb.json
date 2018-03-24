@@ -1,19 +1,6 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+db.potions.insert({"_id" : ObjectId("5a9e12060e83f13d3e47a2f2"), "name" : "Shrinking", "vendor" : "cvdhaba", "price" : 140.99, "score" : 1, "tryDate" : ISODate("2018-04-05T18:30:00Z"), "ingredients" : [ "secret", "new", 192 ], "ratings" : { "strength" : 2, "flavor" : 4 }, "view" : 7 });
+
+db.potions.insert({ "_id" : ObjectId("5a9e11d80e83f13d3e47a2f1"), "name" : "Visibility", "vendor" : "cvdhaba", "price" : 90, "score" : 1, "tryDate" : ISODate("2018-04-05T18:30:00Z"), "ingredients" : [ "new books", "secret" , "happy" ], "ratings" : { "strength" : 5, "flavor" : 3 }, "view" : 5 });
+
+
+db.potions.insert({"name" : "Invisility", "vendor" : "kettlehood", "price" : 10.99, "score" : 59, "tryDate" : ISODate("2018-04-05T18:30:00Z"), "ingredients" : [ "new toes", 42, "secret" ], "ratings" : { "strength" : 2, "flavor" : 5 }, "view" : 5 });

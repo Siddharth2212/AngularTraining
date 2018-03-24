@@ -238,3 +238,17 @@ Day 32
 1. Understanding ORM or ODM
 2. Introduction to Mongoose
 3. Exercise: Using Mongoose as ORM to provide schema to our DB using promise support on Mongoose through Bluebird
+
+Day 33
+1. REST APIs with Express, MongoDB and Mongoose
+2. Learning how to use Postman as a tool to document and test APIs very easily
+3. Exercise: Making REST APIs in Express using Mongoose, Bluebird
+4. Exercise: Testing Endpoints using Postman
+
+Day 34
+1. Exercise: REST APIS continued, added Error handling and endpoints for comments
+2. Basics of deployment on cloud
+3. Exercise: Deploying express app to Heroku cloud hosting platform
+4. Exercise: Deploying mongodb to mlab AWS cloud hosting platform
+5. Exercise: Connecting mlab to Heroku app
+6. Exercise: Understanding how to see logs and debug on Cloud
